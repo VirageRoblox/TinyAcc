@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Standalone helper — deliberately NOT part of RoMacro.sln so it stays
+       separate from the signed, distributed app. -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>RobloxMultiInstance</AssemblyName>
+    <UseWindowsForms>false</UseWindowsForms>
+  </PropertyGroup>
+
+</Project>
