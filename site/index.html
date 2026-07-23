@@ -7,10 +7,7 @@
 <meta name="description" content="TinyAcc lets you run more than one Roblox instance at the same time. TinyAcc is one small file.">
 <link rel="icon" type="image/png" href="icon.png">
 <style>
-  html, body {
-    height: 100%;
-    overflow: hidden;   /* page fits one screen — no scrolling */
-  }
+  html, body { min-height: 100%; }
   body {
     background: #fff;
     color: #111;
@@ -18,15 +15,18 @@
     font-size: 14px;
     line-height: 1.55;
     margin: 0;
+    min-height: 100vh;
     display: flex;
-    align-items: center;      /* center the content vertically */
     justify-content: center;
   }
   .page {
     max-width: 620px;
     width: 100%;
-    padding: 20px;
+    padding: 24px 20px;
     box-sizing: border-box;
+    /* margin:auto centers vertically WHEN the content fits, but unlike
+       align-items:center it never clips the top — a taller page just scrolls. */
+    margin: auto;
   }
   .hero { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
   .intro { flex: 1 1 280px; min-width: 250px; }
